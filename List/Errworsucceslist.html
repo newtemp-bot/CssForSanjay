@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.container{
+            margin: auto 3rem;
+        }
+        li{
+            list-style-type: none;
+            list-style-position: inside;
+            border: 2px solid;
+            margin-block-end: 0.2rem;
+            padding: 0.5rem 0 0.8rem 1rem;
+            border-radius: 10px;
+        }
+        li span{
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+        }
+        li.info{
+            list-style-image: url(info.svg);
+            font-size: 1.8rem;
+            background-color: #bfe3ff;
+            border-color: #74C0FC;
+        }
+        li.success{
+            list-style-image: url(success.svg);
+            font-size: 1.8rem;
+        }
+        li.warrning{
+            list-style-image: url(warrning.svg);
+            font-size: 1.8rem;
+        }
+        li.error{
+            list-style-image: url(error.svg);
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="info"><span>This is the information.</span></li>
+            <li class="success"><span>This is the success.</span></li>
+            <li class="warrning"><span>This is the warrning.</span></li>
+            <li class="error"><span>This is the error.</span></li>
+        </ul>
+    </div>
+</body>
+</html>

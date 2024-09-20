@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table CSS</title>
+        <style>
+            table {
+                width: 50%;
+                height: 150px;
+                text-align: left;
+            }
+            table,
+            tr,
+            td,
+            th {
+                border: solid 1px red;
+                border-collapse: collapse;
+                /* border-collapse: separate;
+            offset: 5px; */
+                padding: 2rem;
+            }
+            thead {
+                height: 10% !important;
+            }
+            th,
+            td {
+                vertical-align: middle;
+                border-bottom: 5px solid #d0ff00;
+            }
+            tr:hover {
+                background-color: antiquewhite;
+            }
+            tr:nth-last-child(odd) {
+                background-color: aliceblue;
+            }
+            th {
+                background-color: #808c4a;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ashok</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pooja</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aakhash</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="overflow-x: auto">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

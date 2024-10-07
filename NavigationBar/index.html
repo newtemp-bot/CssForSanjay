@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nav</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 60px;
+                background-color: antiquewhite;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .container {
+                font-size: larger;
+                width: 80%;
+                height: inherit;
+                margin: 0 auto;
+            }
+
+            .logo {
+                display: inline;
+                float: left;
+            }
+            .links {
+                display: inline;
+                float: right;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(85, 85, 85);
+                transition: 0.2s;
+            }
+            a.active {
+                text-decoration: none;
+                color: black;
+            }
+            a:hover {
+                color: black;
+                color: chocolate;
+                transition: 0.2s linear;
+            }
+            ul {
+                list-style: none;
+            }
+            ul li {
+                display: inline-block;
+                margin: 0rem 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <div class="logo">MYWEBSITE</div>
+                <ul class="links">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Policy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
